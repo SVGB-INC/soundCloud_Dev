@@ -1,0 +1,10 @@
+.mySingleChannel {
+  .thingsToBeHidden {
+    transform: scale(0);
+  }
+  &:hover {
+    .thingsToBeHidden {
+      transform: scale(1);
+    }
+  }
+}

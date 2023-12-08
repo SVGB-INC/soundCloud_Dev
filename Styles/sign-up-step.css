@@ -1,0 +1,11 @@
+input[type="radio"]:not(:checked) + label {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+input[type="radio"]:checked + label {
+  box-shadow: 0px 0px 15px #0068ff;
+}
+
+.pink-bg {
+  background: #c638c8 !important;
+}

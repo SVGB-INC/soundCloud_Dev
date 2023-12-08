@@ -1,0 +1,48 @@
+.sign-up-page {
+  header {
+    max-height: none;
+    nav.navbar + div {
+      height: auto;
+      max-height: none;
+    }
+  }
+  // h5 {
+  //   font-size: 1.2rem;
+  // }
+  label:not(label[for="newsletters"]) {
+    font-size: 0.7rem;
+  }
+
+  label[for="newsletters"] {
+    font-size: 0.9rem;
+  }
+}
+
+.container-section {
+  max-width: 540px;
+  margin: 0 auto;
+  //   div.mx-auto {
+  //   img,
+  //   p,
+  //   a,
+  //   button {
+  //     max-width: 300px;
+  //     margin: 0 auto;
+  //   }
+
+  & > * {
+    // max-width: 300px;
+    margin: 0 auto;
+  }
+  img {
+    height: 7rem;
+    object-fit: cover;
+  }
+  .sign4-icon {
+    height: 7rem;
+    border: 3px solid;
+    width: 7rem;
+    border-radius: 50%;
+  }
+  //   }
+}

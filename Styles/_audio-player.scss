@@ -1,0 +1,60 @@
+.audio-player {
+  box-shadow: 0 0 1rem black;
+  background: rgb(241, 243, 244);
+  width: 100%;
+  audio {
+    width: 100%;
+  }
+  .actual-player {
+    flex: 1 1 20rem;
+  }
+  .det-player {
+    flex: 0 1 auto;
+    width: 20rem;
+    display: flex;
+    img {
+      position: relative;
+      top: 0.5rem;
+      height: 2.4rem;
+      object-fit: cover;
+    }
+
+    .text {
+      position: relative;
+      top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      strong,
+      p {
+        font-size: 0.7rem;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .audio-player {
+    .det-player {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .audio-player {
+    .container {
+      padding: 0 !important;
+    }
+    .det-player {
+      width: 100%;
+    }
+  }
+}

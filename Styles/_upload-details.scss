@@ -1,0 +1,71 @@
+.upload-details {
+  &_additionalOptional,
+  &_addChannelDiv {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &_details {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
+      border-radius: 5px;
+      display: flex;
+      gap: 0.7rem;
+      flex-direction: column;
+      max-width: 25rem;
+      margin: 0.5rem 0 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+      & * {
+        font-size: 0.75rem !important;
+      }
+      .details_single {
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+        span,
+        label {
+          display: inline-block;
+          height: 1.5rem;
+          min-width: 3rem;
+        }
+        p {
+          text-align: left;
+          margin: 0;
+        }
+        & > * {
+          flex: 1 1 auto;
+        }
+        &.input-div {
+          justify-content: flex-start;
+          align-items: center;
+        }
+        &.chanListClass {
+          display: block;
+        }
+      }
+    }
+  }
+  input.closerINput[type="radio"] + label + .upload-details_additionalOptional_details {
+    display: none !important;
+  }
+  .upload-details_addChannelDiv_details {
+    display: none;
+  }
+  input.closerINput:checked[type="radio"] + label + .upload-details_additionalOptional_details {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 468px) {
+  .upload-details {
+    &_additionalOptional {
+      flex-wrap: wrap;
+      &_details {
+        .details_single {
+          gap: 0.2rem;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
